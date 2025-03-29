@@ -7,6 +7,7 @@ import androidx.compose.ui.*
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
+//Pantalla con menú para acceder a los ejercicios de ingles para practicar
 @Composable
 fun DetailsScreen(navController: NavController) {
     Column(
