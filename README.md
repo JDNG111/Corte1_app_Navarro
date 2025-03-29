@@ -4,24 +4,35 @@ Programación móvil - 2025
  
 📌 Descripción
 La aplicación “Engineering English App” está pensada para ser un método de estudio y repaso del idioma inglés con un enfoque al vocabulario técnico que usan y requieren las distintas ingenierías, de tal forma, esta app permite a los usuarios configurar su perfil y preferencias, incluyendo la carga y eliminación de una foto de perfil, administración de una cuenta personal con nombre de usuario, profesión, idioma nativo, tema (oscuro o claro) y activación o desactivación de notificaciones.
+
 🚀 Funcionalidades
 •	Carga y eliminación de foto de perfil (con persistencia en LiveData)
+
 •	Modificación de datos personales: nombre de usuario, profesión e idioma nativo aplicable a todo el UI
+
 •	Cambio de tema: modo claro u oscuro (persistente en el UI)
+
 •	Activación/desactivación de notificaciones
+
 •	Persistencia de datos 
 
 ![image](https://github.com/user-attachments/assets/fd3b54b1-4bc7-46ac-81bc-bb0f35a9d6d6)
 
 🛠️ Tecnologías Utilizadas
 •	Kotlin (para la lógica de la aplicación)
+
 •	Jetpack Compose (para la UI)
+
 •	Coil (para carga de imágenes)
+
 📜 Explicación de Archivos Claves
+
 ThemeViewModel.kt
 Gestiona los datos del usuario y la persistencia.
 •	loadUserData(): Carga los datos guardados.
+
 •	updateProfilePicture(uri: String?): Guarda la foto de perfil.
+
 •	saveToDataStore(key: String, value: String): Guarda datos con LiveData.
 
 ![image](https://github.com/user-attachments/assets/2c803678-8922-4c31-b58d-905fc89b7b18)
