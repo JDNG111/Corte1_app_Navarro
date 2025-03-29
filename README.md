@@ -28,19 +28,39 @@ Gestiona los datos del usuario y la persistencia.
  
 SettingsScreen.kt
 Pantalla donde el usuario puede cambiar su configuración.
+
 •	Muestra y permite cambiar la foto de perfil usando AsyncImage (Coil).
+
 •	Botón para seleccionar una imagen desde la galería.
+
 •	Botón para eliminar la foto de perfil.
+
 •	Formularios para editar datos personales.
+
 •	Switch para cambiar entre modo oscuro y claro.
+
 •	Switch para activar o desactivar notificaciones.
  
 🛠️ Futuras Mejoras
 •	Implementar Firebase para almacenamiento de imágenes.
+
 •	Agregar validaciones en los formularios.
+
 •	Mejorar la experiencia de usuario con animaciones.
 
  ![image](https://github.com/user-attachments/assets/7359a919-e68e-44fe-afe0-fd1f31441bb2)
+
+🙌 Instalación y Uso
+
+Clona este repositorio:
+
+git clone https://github.com/JDNG111/Corte1_app_Navarro.git
+
+Abre el proyecto en Android Studio.
+
+Conéctalo a un emulador o dispositivo físico.
+
+Ejecuta la app y personaliza tu perfil. 🎨
 
 ________________________________________
 Hecho por:
