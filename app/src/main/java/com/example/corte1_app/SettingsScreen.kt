@@ -22,8 +22,14 @@ import com.example.corte1_app.viewmodel.ThemeViewModel
 import com.example.corte1_app.R
 import java.io.File
 
+/**
+ * Esta es una pantalla principal, es de configuración donde el usuario puede actualizar
+ * su información de perfil, cambiar el color de fondo de la app y administrar las notificaciones.
+ */
+
 @Composable
 fun SettingsScreen(themeViewModel: ThemeViewModel) {
+    // Se obtienen los valores de los estados del ViewModel
     val username by themeViewModel.username.collectAsState()
     val profession by themeViewModel.profession.collectAsState()
     val nativeLanguage by themeViewModel.nativeLanguage.collectAsState()
@@ -51,6 +57,7 @@ fun SettingsScreen(themeViewModel: ThemeViewModel) {
         Text(text = "Foto de Perfil", style = MaterialTheme.typography.headlineSmall)
         Spacer(modifier = Modifier.height(10.dp))
 
+        // Se obtiene la imagen de perfil, si existe, o la imagen predeterminada
         val profileImage = remember(profilePicture) {
             profilePicture?.takeIf { it.isNotEmpty() }?.let { path ->
                 File(path).takeIf { it.exists() }?.absolutePath
@@ -111,6 +118,7 @@ fun SettingsScreen(themeViewModel: ThemeViewModel) {
 
         Spacer(modifier = Modifier.height(10.dp))
 
+        // Switch para activar/desactivar el modo oscuro
         Text(text = "Modo Oscuro")
         Switch(
             checked = selectedColor == "Dark",
